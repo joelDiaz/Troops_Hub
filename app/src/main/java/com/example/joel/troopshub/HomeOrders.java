@@ -26,10 +26,6 @@ public class HomeOrders extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.icono);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-//adriananannananana
-        String a = "joseeee";
-        String a7 = "joseeee";
-        String a8 = "joseeee";
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navView = (NavigationView) findViewById(R.id.nav_view);
