@@ -8,4 +8,6 @@
     <string name="otras_opciones">OtrasOpciones</string>
     <string name="opcion_1">Opcion1</string>
     <string name="opcion_2">Opcion2</string>
+    <string name="title_activity_view_pager">HomeOrders</string>
+    <string name="cont">Contenido</string>
 </resources>
