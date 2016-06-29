@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <EditText
+        android:id="@+id/NroCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_marginTop="10dp"
+        android:hint="@string/NroCC" />
+
+    <EditText
+
+        android:id="@+id/DateExp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NroCC"
+        android:layout_marginTop="5dp"
+        android:hint="@string/DateExp" />
+
+    <EditText
+
+        android:id="@+id/CVC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DateExp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/CVC" />
+
+    <EditText
+        android:id="@+id/BillingAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CVC"
+        android:layout_marginTop="5dp"
+        android:hint="@string/Billing" />
+
+    <EditText
+
+        android:id="@+id/Unite_suite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BillingAddress"
+        android:layout_marginTop="5dp"
+        android:hint="@string/unitesuit" />
+
+    <EditText
+        android:id="@+id/City_addcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Unite_suite"
+        android:layout_marginTop="5dp"
+        android:hint="@string/city" />
+
+    <EditText
+
+        android:id="@+id/State_addcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/City_addcard"
+        android:layout_marginTop="5dp"
+        android:hint="@string/state" />
+
+    <EditText
+
+        android:id="@+id/PostalCode_addcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/State_addcard"
+        android:layout_marginTop="5dp"
+        android:hint="@string/postalcode" />
+
+    <CheckBox
+        android:id="@+id/savecard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PostalCode_addcard"
+        android:layout_marginTop="5dp"
+
+        android:text="@string/savecard" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/savecard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="@string/Add" />
+
+
+</RelativeLayout>
