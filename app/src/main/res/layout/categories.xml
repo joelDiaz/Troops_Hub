@@ -22,6 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/backgroundbutton"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
         android:text="@string/Restaurant" />
 
     <Button
@@ -30,7 +32,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/backgroundbutton"
-
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
         android:text="@string/Laundry" />
 
     <Button
@@ -39,8 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/backgroundbutton"
+        android:drawableRight="@android:drawable/ic_menu_more"
         android:text="@string/Groceries"
-
+        android:drawableLeft="@android:drawable/btn_star_big_on"
 
         />
 
@@ -50,6 +54,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/backgroundbutton"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
         android:text="@string/Pets" />
 
     <Button
@@ -58,7 +64,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/backgroundbutton"
-
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
         android:text="@string/Hairstyle" />
 
     <Button
@@ -67,7 +74,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/backgroundbutton"
-
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
         android:text="@string/Pharmacy" />
 
     <Button
@@ -76,6 +84,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/backgroundbutton"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
         android:text="@string/Others" />
 
 

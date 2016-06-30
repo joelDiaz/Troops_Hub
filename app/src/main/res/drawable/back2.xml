@@ -8,6 +8,6 @@
         android:height="@dimen/activity_vertical_margin" />
 
     <gradient android:startColor="#fff"
-        android:endColor="#000"/>
+        android:endColor="#b6adad"/>
 
 </shape>

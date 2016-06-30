@@ -44,4 +44,12 @@
     <string name="Hairstyle">HairStyle</string>
     <string name="Pharmacy">Pharmacy</string>
     <string name="Others">Others</string>
+    <string name="description">Description</string>
+    <string name="nameREst">Restaurant</string>
+    <string name="restName">Restaurant Name</string>
+    <string name="Dishesname">Dishes Name</string>
+    <string name="Dishesprice">Dishes, Price and ingredients</string>
+    <string name="checkout">Check out</string>
+    <string name="addcar">Add Car</string>
+    <string name="imagefood">Image Food</string>
 </resources>
