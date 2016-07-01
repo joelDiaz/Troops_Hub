@@ -2,20 +2,19 @@ package com.example.joel.troopshub;
 
 import android.os.Bundle;
 
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
-/**
- * Created by AndroidDeveloper01 on 30/6/16.
- */
-public class FoodDelivery extends Fragment {
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+
+public class FoodDelivery extends AppCompatActivity {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fooddelivery, container, false);
-        return v;
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fooddelivery);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.appbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

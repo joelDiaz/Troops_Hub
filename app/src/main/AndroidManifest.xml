@@ -32,6 +32,15 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".signin"></activity>
         <activity android:name=".singup"></activity>
+        <activity android:name=".Dishes" />
+        <activity android:name=".Checkout" />
+        <activity android:name=".DishesDetail" />
+        <activity android:name=".FoodDelivery" />
+        <activity android:name=".TrackingOrderInfo" />
+        <activity android:name=".AddCard" />
+        <activity android:name=".CardList" />
+
+
     </application>
 
 </manifest>
