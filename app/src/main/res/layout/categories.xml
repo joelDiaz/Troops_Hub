@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <Button
+        android:id="@+id/Restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backgroundbutton"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:text="@string/Restaurant" />
+
+    <Button
+        android:id="@+id/Laundry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backgroundbutton"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:text="@string/Laundry" />
+
+    <Button
+        android:id="@+id/Groceries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backgroundbutton"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:text="@string/Groceries"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+
+        />
+
+    <Button
+        android:id="@+id/Pets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backgroundbutton"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:text="@string/Pets" />
+
+    <Button
+        android:id="@+id/Hairstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backgroundbutton"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:text="@string/Hairstyle" />
+
+    <Button
+        android:id="@+id/Pharmacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backgroundbutton"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:text="@string/Pharmacy" />
+
+    <Button
+        android:id="@+id/Others"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backgroundbutton"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:text="@string/Others" />
+
+
+</LinearLayout>

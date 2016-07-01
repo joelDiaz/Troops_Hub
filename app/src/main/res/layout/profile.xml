@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/Imageperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icono" />
+
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Imageperfil"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/firstname" />
+
+
+    <TextView
+        android:id="@+id/lasttname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstname"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/lastname" />
+
+    <TextView
+        android:id="@+id/Streetsaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lasttname"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/streetsadd" />
+
+    <TextView
+        android:id="@+id/unitesuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Streetsaddress"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/unitesuit" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unitesuit"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/city" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/state" />
+
+    <TextView
+        android:id="@+id/postalcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/state"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/postalcode"
+        android:layout_marginBottom="45dp"/>
+
+    <Button
+        android:id="@+id/Cardlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postalcode"
+        android:text="@string/Cardlist" />
+
+    <Button
+        android:id="@+id/addcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Cardlist"
+        android:text="@string/addcard" />
+
+
+</RelativeLayout>

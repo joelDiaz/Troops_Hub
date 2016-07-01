@@ -1,6 +1,7 @@
 package com.example.joel.troopshub;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
@@ -9,10 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class HomeOrders extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
+    FloatingActionButton floatbutton;
     NavigationView navView;
 
 
@@ -22,13 +25,26 @@ public class HomeOrders extends AppCompatActivity {
         setContentView(R.layout.homeorders);
         Toolbar toolbar = (Toolbar) findViewById(R.id.appbar);
         setSupportActionBar(toolbar);
-
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navView = (NavigationView) findViewById(R.id.navview);
+        floatbutton = (FloatingActionButton)findViewById(R.id.fab);
+
+
+        floatbutton.setOnClickListener(new View.OnClickListener() {
+
+            boolean fragmentTransaction = false;
+            Fragment fragment = null;
+
+            @Override
+            public void onClick(View v) {
+                fragment = new Categories();
+                fragmentTransaction = true;
+            }
+        });
+
 
         navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -37,27 +53,24 @@ public class HomeOrders extends AppCompatActivity {
                 Fragment fragment = null;
 
                 switch (item.getItemId()) {
-                    case R.id.menu_seccion_1:
+                    case R.id.Home:
                         fragment = new HomeFragment();
                         fragmentTransaction = true;
                         break;
 
-                    case R.id.menu_seccion_2:
-                        fragment = new HomeFragment();
+                    case R.id.Profile:
+                        fragment = new Profile();
                         fragmentTransaction = true;
                         break;
-                    case R.id.menu_seccion_3:
-                        fragment = new HomeFragment();
+                    case R.id.Support:
+                        fragment = new Support();
                         fragmentTransaction = true;
                         break;
-                    case R.id.menu_opcion_1:
-                        fragment = new HomeFragment();
+                    case R.id.AboutUs:
+                        fragment = new AboutUs();
                         fragmentTransaction = true;
                         break;
-                    case R.id.menu_opcion_2:
-                        fragment = new HomeFragment();
-                        fragmentTransaction = true;
-                        break;
+
 
 
                 }

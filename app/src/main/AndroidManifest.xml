@@ -12,12 +12,13 @@
 
         <activity android:name=".MainActivity">
             <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
-        <activity android:name=".start_app"
+        <activity
+            android:name=".start_app"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,9 +28,22 @@
         </activity>
 
 
-        <activity android:name=".HomeOrders"
+        <activity
+            android:name=".HomeOrders"
             android:label="@string/title_activity_view_pager"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".AddCard"
+            android:label="@string/addcard"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".CardList"
+            android:label="@string/Cardlist"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+
 
 
     </application>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/restName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/restName"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#fff" />
+
+
+    <ImageView
+        android:id="@+id/ImagRest"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="#807f7f" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/back2">
+
+        <TextView
+            android:id="@+id/Dishesname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/Dishesname"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/Dishesprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/Dishesprice"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+        <TextView
+            android:id="@+id/checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="115dp"
+            android:clickable="true"
+            android:text="@string/checkout"
+            android:textColor="#54742b"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/AddCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="115dp"
+            android:clickable="true"
+            android:text="@string/addcar"
+            android:textColor="#54742b"
+            android:textSize="18dp" />
+
+    </FrameLayout>
+
+</LinearLayout>
