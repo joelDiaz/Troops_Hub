@@ -39,7 +39,7 @@
             android:id="@+id/Dishesname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
             android:text="@string/Dishesname"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
@@ -47,7 +47,7 @@
             android:id="@+id/Dishesprice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="25dp"
             android:text="@string/Dishesprice"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />

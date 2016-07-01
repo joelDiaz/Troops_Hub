@@ -52,4 +52,5 @@
     <string name="checkout">Check out</string>
     <string name="addcar">Add Car</string>
     <string name="imagefood">Image Food</string>
+    <string name="confiradd">Confirm Address</string>
 </resources>
