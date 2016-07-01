@@ -8,14 +8,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
         <activity android:name=".MainActivity">
-            <!--<intent-filter>-->
-            <!--<action android:name="android.intent.action.MAIN" />-->
 
-            <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".start_app"
@@ -26,26 +26,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".HomeOrders"
             android:label="@string/title_activity_view_pager"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-        <activity
-            android:name=".AddCard"
-            android:label="@string/addcard"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-        <activity
-            android:name=".CardList"
-            android:label="@string/Cardlist"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-
-
-
+        <activity android:name=".signin"></activity>
+        <activity android:name=".singup"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Payment Information"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_marginTop="50dp"
+            android:id="@+id/nrocc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/nro_cc" />
+
+        <EditText
+            android:id="@+id/dateexp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/date_exp" />
+
+        <EditText
+            android:id="@+id/cvc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="CVC"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/billing"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/billing_address"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/unit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/unit_suite"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/city"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/state"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/postal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/postal"
+            android:inputType="number" />
+        <!--<CheckBox-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=" Save Card for future uses"/>-->
+
+    </LinearLayout>
+</FrameLayout>
