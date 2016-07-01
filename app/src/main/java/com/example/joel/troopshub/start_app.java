@@ -16,8 +16,8 @@ public class start_app extends AppCompatActivity {
             public void onTick(long millisUntilFinished) {
             }
             public void onFinish() {
-//                Intent intent = new Intent(general.this, ventana2.class);
-//                startActivity(intent);
+                Intent intent = new Intent(start_app.this, signin.class);
+                startActivity(intent);
             }
         }.start();
     }
