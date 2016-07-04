@@ -67,4 +67,6 @@
     <string name="checkout">Check out</string>
     <string name="addcar">Add Car</string>
     <string name="imagefood">Image Food</string>
+    <string name="submit">SUBMIT ></string>
+    <string name="next"><![CDATA[NEXT >]]></string>
 </resources>
