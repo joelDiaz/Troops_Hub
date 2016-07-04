@@ -69,4 +69,24 @@
     <string name="imagefood">Image Food</string>
     <string name="submit">SUBMIT ></string>
     <string name="next"><![CDATA[NEXT >]]></string>
+    <string name="confiradd">Confirm Address</string>
+    <string name="streetCheckout">Street Checkout</string>
+    <string name="qty">Qty</string>
+    <string name="price">Price</string>
+    <string name="Subtotal">Order Sub Total</string>
+    <string name="Subtotalprice">$00,0</string>
+    <string name="Delivery">Delivery Free</string>
+    <string name="Total">Total</string>
+    <string name="Cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="ok">Ok</string>
+    <string name="orderinfo">Order Info</string>
+    <string name="ordernro">Order Nro</string>
+    <string name="Addorder">Address</string>
+    <string name="dateHour">Date Hour</string>
+    <string name="PickupAssigned">Pickup Assigned</string>
+    <string name="namepickup">Jowel y Randy</string>
+    <string name="orderstatus">Order Status</string>
+    <string name="infoorder">The driver have the package and he is on the way</string>
+    <string name="OrderDetail">Order Detail</string>
 </resources>
