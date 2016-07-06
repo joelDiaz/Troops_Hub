@@ -89,4 +89,6 @@
     <string name="orderstatus">Order Status</string>
     <string name="infoorder">The driver have the package and he is on the way</string>
     <string name="OrderDetail">Order Detail</string>
+    <string name="ordercomplete">Day, Month and Year - Time</string>
+    <string name="Rating">Rating</string>
 </resources>

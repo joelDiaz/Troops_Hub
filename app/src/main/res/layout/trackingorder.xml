@@ -1,173 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#3d3c3c">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2e2c2c">
 
 
-    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/appbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
-
-    <ImageView
-        android:id="@+id/mapatracking"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/appbar"
-        android:src="@drawable/icono" />
-
-
-    <ImageButton
-        android:id="@+id/check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/mapatracking"
+    <RelativeLayout
         android:layout_marginLeft="15dp"
-        android:background="@drawable/imageback"
-        android:src="@android:drawable/presence_invisible" />
-
-    <!--<LinearLayout-->
-
-    <!--android:layout_width="3dp"-->
-    <!--android:layout_height="1dp"-->
-    <!--android:background="#fff"-->
-    <!--android:orientation="vertical"-->
-    <!--android:layout_below="@+id/orderview"-->
-    <!--android:layout_alignBottom="@+id/NamePickup"-->
-    <!--android:layout_alignRight="@+id/check"-->
-    <!--android:layout_alignEnd="@+id/check" />-->
-
-    <TextView
-        android:id="@+id/orderview"
-        android:layout_width="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/mapatracking"
-        android:layout_marginLeft="5dp"
-        android:layout_marginStart="5dp"
+        android:orientation="vertical">
 
+        <FrameLayout
+            android:id="@+id/frameimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        android:layout_toRightOf="@+id/check"
-        android:text="@string/orderinfo"
-        android:textColor="#00d12d" />
+            <ImageView
+                android:id="@+id/maptracking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icono" />
+        </FrameLayout>
 
-    <FrameLayout
-
-        android:id="@+id/framelayout"
-        android:layout_width="300dp"
-        android:layout_height="90dp"
-        android:layout_below="@+id/orderview"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="40dp"
-        android:background="@drawable/back2">
+        <ImageButton
+            android:id="@+id/btncheck"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frameimage"
+            android:background="@drawable/imageback" />
 
         <TextView
-            android:id="@+id/Ordennro"
+
+            android:id="@+id/orderinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frameimage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/btncheck"
+            android:layout_toRightOf="@+id/btncheck"
+            android:text="@string/orderinfo"
+            android:textColor="@color/colorPrimary" />
+
+        <FrameLayout
+            android:id="@+id/framecontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderinfo"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/back2">
+
+            <TextView
+                android:id="@+id/nroOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/ordernro" />
+
+            <TextView
+                android:id="@+id/orderaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="@string/Addorder" />
+
+            <TextView
+                android:id="@+id/Datehour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="@string/dateHour" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:text="@string/Total" />
+
+
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/imagePickup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/ordernro" />
+            android:layout_below="@+id/framecontent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/imageback"
+            android:src="@android:drawable/ic_dialog_alert" />
+
 
         <TextView
-            android:id="@+id/OrdenAddress"
+            android:id="@+id/pickupassign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:text="@string/Addorder" />
+            android:layout_below="@+id/imagePickup"
+            android:layout_centerHorizontal="true"
+            android:text="@string/PickupAssigned"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
 
         <TextView
-            android:id="@+id/Date_hour"
+            android:id="@+id/pickupname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="35dp"
-            android:text="@string/dateHour" />
+            android:layout_below="@+id/pickupassign"
+            android:layout_centerHorizontal="true"
+            android:text="@string/namepickup"
+            android:textColor="#fff" />
 
 
-    </FrameLayout>
+        <ImageView
 
-    <ImageView
-        android:id="@+id/Pickup"
+            android:id="@+id/btnchecknext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pickupname"
+            android:background="@drawable/imageback" />
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/framelayout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/imageback"
-        android:src="@android:drawable/ic_input_add" />
+        <TextView
+            android:id="@+id/orderstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pickupname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/btnchecknext"
+            android:layout_toRightOf="@+id/btnchecknext"
+            android:text="@string/orderstatus"
+            android:textColor="@color/colorPrimary" />
 
+        <FrameLayout
+            android:id="@+id/orderstatusframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderstatus"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp">
 
-    <TextView
-        android:id="@+id/PickupAssigned"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Pickup"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:text="@string/PickupAssigned"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:textColor="#fff" />
+            <TextView
+                android:id="@+id/orderstatusinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/infoorder"
+                android:textColor="#fff" />
 
-    <TextView
-        android:id="@+id/NamePickup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_below="@+id/PickupAssigned"
-        android:layout_centerHorizontal="true"
-        android:text="@string/namepickup"
-        android:textColor="#fff" />
-
-    <ImageButton
-        android:id="@+id/checkstatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/NamePickup"
-        android:layout_marginLeft="15dp"
-        android:background="@drawable/imageback"
-        android:src="@android:drawable/presence_invisible" />
-
-    <TextView
-        android:id="@+id/orderviewstatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/NamePickup"
-        android:layout_marginLeft="5dp"
-        android:layout_toRightOf="@+id/check"
-        android:text="@string/orderstatus"
-        android:textColor="#00d12d" />
+            <Button
+                android:id="@+id/orderdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="#70e609"
+                android:text="@string/OrderDetail" />
 
 
-    <TextView
-        android:id="@+id/infoorder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/orderviewstatus"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/infoorder"
-        android:textColor="#fff" />
+        </FrameLayout>
 
-    <Button
-        android:id="@+id/orderdetailbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/infoorder"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:background="#04e913"
-        android:text="@string/OrderDetail"
-        android:textColor="#fff" />
+        <ImageView
+
+            android:id="@+id/btncheckcomplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderstatusframe"
+            android:background="@drawable/imageback" />
 
 
-</RelativeLayout>
+        <FrameLayout
+            android:id="@+id/framecomplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btncheckcomplete"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@+id/btncheckcomplete"
+            android:layout_toRightOf="@+id/btncheckcomplete">
+
+            <TextView
+                android:id="@+id/ordercomplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ordercomplete"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/ImageRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="25dp"
+                android:src="@android:drawable/sym_def_app_icon"/>
+
+
+            <TextView
+                android:id="@+id/Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginLeft="95dp"
+
+                android:text="@string/Rating"
+                android:textColor="#fff"
+                android:layout_marginTop="75dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
+
 
